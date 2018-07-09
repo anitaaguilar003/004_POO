@@ -6,10 +6,6 @@ public class Gerente extends Empleado {
 
     private String departamento;
 
-    public Gerente() {
-        super();
-    }
-
     public Gerente(String nombre, double salario, String fechaNacimiento, String departamento) {
         super(nombre, salario, fechaNacimiento);
         this.departamento = departamento;
