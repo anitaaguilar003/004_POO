@@ -47,4 +47,8 @@ public class Empleado {
                 "fechaNacimiento=" + fechaNacimiento + '\n' +
                 '}';
     }
+
+    public void saludar() {
+        System.out.println("Hola, trabajo en la empresa y me llamo "+this.nombre);
+    }
 }

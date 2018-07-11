@@ -11,11 +11,15 @@ public class Main {
         plantilla.add(new Empleado("Ric Flair",975,"01/01/1950"));
         plantilla.add(new Gerente("Triple H",995,"06/08/1981","Evolution"));
         plantilla.add(new Director("Vince McMahon",1200,"04/02/1965","Evolution","9841DIY"));
+        plantilla.add(new Director("Paul Heyman",1000,"26/11/1970","WWE","1234ECW"));
 
         for(Empleado persona : plantilla) {
             System.out.println(persona.toString());
         }
 
+        Empleado e = plantilla.get(5);
+
+        e.saludar(); //Cuando se guarda un objeto dentro de un contenedor, el método que se ejecuta es el del objeto, no el del contenedor.
 
     }
 }

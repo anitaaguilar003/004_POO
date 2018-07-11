@@ -9,7 +9,7 @@ public class Director extends Gerente{
     public Director(String nombre, double salario, String fechaNacimiento, String departamento, String matriculaCoche) {
         super(nombre,salario,fechaNacimiento,departamento);
         this.matriculaCoche = matriculaCoche;
-        incentivo();
+        this.incentivo(1.10,100);
     }
 
     public String getMatriculaCoche() {
@@ -20,9 +20,9 @@ public class Director extends Gerente{
         this.matriculaCoche = matriculaCoche;
     }
 
-    @Override
-    protected void incentivo() {
-        setSalario(100+(getSalario()*1.10));
+    protected void incentivo(double incentivo,double incremento) {
+        incentivo(incentivo);
+        setSalario(incremento+getSalario());
     }
 
     @Override
@@ -35,5 +35,10 @@ public class Director extends Gerente{
                 "departamento=" + getDepartamento() + '\n' +
                 "matriculaCoche=" + matriculaCoche + '\n' +
                 '}';
+    }
+
+    @Override
+    public void saludar() {
+        System.out.println("Hola, soy el director de la empresa y me llamo "+getNombre());
     }
 }
