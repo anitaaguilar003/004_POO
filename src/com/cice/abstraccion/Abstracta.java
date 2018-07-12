@@ -1,4 +1,4 @@
-package com.cice.ejercicios.abstraccion;
+package com.cice.abstraccion;
 
 public abstract class Abstracta {
 

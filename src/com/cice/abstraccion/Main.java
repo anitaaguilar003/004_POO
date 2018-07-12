@@ -1,4 +1,4 @@
-package com.cice.ejercicios.abstraccion;
+package com.cice.abstraccion;
 
 import java.util.ArrayList;
 import java.util.Arrays;

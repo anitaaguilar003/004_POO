@@ -1,4 +1,4 @@
-package com.cice.ejercicios.interfaces;
+package com.cice.interfaces;
 
 import java.util.ArrayList;
 import java.util.List;
