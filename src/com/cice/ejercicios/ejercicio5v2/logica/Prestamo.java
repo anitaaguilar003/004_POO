@@ -1,4 +1,4 @@
-package com.cice.ejercicios.ejercicio5.logica;
+package com.cice.ejercicios.ejercicio5v2.logica;
 
 public interface Prestamo {
 

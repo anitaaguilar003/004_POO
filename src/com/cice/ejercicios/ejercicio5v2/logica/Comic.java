@@ -1,6 +1,6 @@
-package com.cice.ejercicios.ejercicio5.logica;
+package com.cice.ejercicios.ejercicio5v2.logica;
 
-public class Comic extends Recurso {
+public class Comic extends Publicacion {
     //- Cómics -> número, colección
 
     private int numero;
@@ -30,5 +30,11 @@ public class Comic extends Recurso {
 
     public void setColeccion(String coleccion) {
         this.coleccion = coleccion;
+    }
+
+    public String toString() {
+        return "LIBRO\n"+
+                "\t{Número "+this.numero+"\n"+
+                "\tColección "+this.coleccion+"\n"+super.toString();
     }
 }

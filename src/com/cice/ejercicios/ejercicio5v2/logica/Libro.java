@@ -1,11 +1,10 @@
-package com.cice.ejercicios.ejercicio5.logica;
+package com.cice.ejercicios.ejercicio5v2.logica;
 
-public class Libro extends Recurso implements Prestamo {
+public class Libro extends Publicacion {
     //edición, ISBN, autor (es único)
     private int edicion;
     private String isbn;
     private String autor;
-    private boolean prestado;
 
     public Libro() {
         super();
@@ -16,7 +15,6 @@ public class Libro extends Recurso implements Prestamo {
         this.edicion = edicion;
         this.isbn = isbn;
         this.autor = autor;
-        this.prestado = false;
     }
 
     public void setEdicion(int edicion) {
@@ -43,17 +41,11 @@ public class Libro extends Recurso implements Prestamo {
         return autor;
     }
 
-    @Override
-    public void prestar() {
-        this.prestado = true;
+    public String toString() {
+        return "LIBRO\n"+
+                "\t{Edición "+this.edicion+"\n"+
+                "\tISBN "+this.isbn+"\n"+
+                "\tAutor "+this.autor+"\n"+super.toString();
     }
 
-    @Override
-    public void devolver() {
-        this.prestado = false;
-    }
-
-    public boolean isPrestado() {
-        return this.prestado;
-    }
 }
